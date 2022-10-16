@@ -3,13 +3,6 @@ const audio = document.getElementById('song');
 
 const tl = gsap.timeline({defaults: {ease: 'power1.out'}});
 
-window.onload=function(){
-    var r = confirm("AutoPlay?");
-    if(r == true){
-        audio.play();
-    }
-}
-
 
 tl.to('.text', {y: '0%', duration: 1, stagger: 0.25});
 tl.to('.slider', {y: '-100%', duration: 1.5, delay: 7});
